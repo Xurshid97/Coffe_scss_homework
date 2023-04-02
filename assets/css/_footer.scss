@@ -1,0 +1,71 @@
+footer {
+    width: 65%;
+    margin: 100px auto 48px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .short_history p {
+    margin: 22px 0 70px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.7);
+    width: 258px;
+ }
+ .short_history h6 {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.3);
+ }
+
+ footer h5 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+ }
+ footer ul li {
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.7);
+    margin: 10px 0;
+
+    &:hover {
+        color:rgb(161, 161, 10);
+        }
+ }
+ #mail {
+    font-size: 23px;
+    line-height: 36px;
+    color: #1D1F2E;
+    margin-bottom: 45px;
+ }
+ #powered {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.3);
+ }
+
+ @media (max-width: 1200px) {
+    footer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 15px;
+    }
+}

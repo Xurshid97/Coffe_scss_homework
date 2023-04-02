@@ -1,0 +1,238 @@
+
+#products {
+    width: 65%;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quotes_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    row-gap: 20px;
+}
+
+#quotes_products h3 {
+    font-size: 28px;
+    font-style: normal;
+    line-height: 40px;
+    width: 80%;
+}
+
+#quotes_products p {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+    margin-bottom: 15px;
+}
+
+#quotes_products a {
+    position: relative;
+}
+#quotes_products a::after{
+    content: '';
+    position: absolute;
+    width: 133px;
+    height: 2px;
+    background: rgba(162, 95, 75, 0.2);
+    bottom: -12px;
+    left: 0;
+}
+
+.mugs {
+    width: 65%;
+    margin: 100px auto 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.mugs h3 {
+    position: relative;
+    display: inline-block;
+}
+.mugs h3::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background: #ECECED;
+    top: 50%;
+    left: -60px;
+}
+.mugs h3::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background: #ECECED;
+    top: 50%;
+    right: -60px;
+}
+
+.premium {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.premium .card {
+    max-width: 480px;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 25px;
+}
+.premium .card h3 {
+    margin: 25px 0 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.premium .card_img {
+    max-width: 460px;
+    max-height: 540px;
+    margin: 0 auto;
+}
+#discount {
+    font-size: 19px;
+    color: #A25F4B;
+}
+#discount span {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: rgba(29, 31, 46, 0.4);
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.more .card {
+    max-width: 316px;
+    max-height: 495px;
+    text-align: center;
+    padding: 0 8px;
+}
+.more .card h3 {
+    margin: 35px 0 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.more .card .card_img {
+    max-width: 300px;
+    height: 380px;
+    margin: 0 auto;
+}
+.offer {
+    display: flex;
+    gap: 20px;
+}
+.offer_images {
+    display: flex;
+    gap: 20px;
+    max-width: 460px;
+    max-height: 280px;
+}
+.main_offer {
+    max-width: 280px;
+    max-height: 280px;
+}
+.other_offer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: space-between;
+}
+.other_offers {
+    max-width: 160px;
+    height: 130px;
+}
+.offer_content {
+    padding: 0 60px;
+}
+.offer_content h3 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+.offer_content h1 {
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 237px;
+    margin: 15px 0;
+}
+.offer_content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+    margin: 0 0 25px;
+    max-width: 353px;
+}
+.offer_content a button {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 9px 24px;
+    background: #1D1F2E;
+
+    &:hover {
+        background: #1b30ce;
+        }
+}
+
+#just_img {
+    width: 100%;
+    max-height: 50vh;
+    margin: 120px 0;
+}
+
+@media (max-width: 1440px) {
+    #products {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 680px) {
+    #products {
+        width: 80%;
+        margin: 120px auto;
+    }
+
+    .more .card .card_img {
+        max-height: 340px;
+        margin: 0 auto;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer_images {
+        gap: 5px;
+    }
+
+    .more .card h3 {
+        margin: 5px 0 5px;
+    }
+    .more .card p {
+        margin-bottom: 25px;
+    }
+}

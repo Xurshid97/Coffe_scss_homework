@@ -1,0 +1,49 @@
+.showcase {
+    width: 100%;
+    background: #050827;
+}
+
+.showcase_container {
+    width: 65%;
+    height: 75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    color: #fff;
+
+    background-image: url('../media/showcase.png');
+    background-position: center;
+    background-size: cover;
+
+    p {
+        
+        text-align: center;
+    }
+}
+.showcase_container h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.showcase_container h1 {
+    font-size: 47px;
+    text-align: center;
+}
+
+.showcase_container a button {
+    padding: 8px 24px;
+    margin-top: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+    
+    &:hover {
+        color:rgb(161, 161, 10);
+        background-color: #050827;
+        outline: none;
+        }
+}
